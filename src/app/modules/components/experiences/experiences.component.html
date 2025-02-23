@@ -1,1 +1,15 @@
-<p>experiences works!</p>
+<div class="container">
+    <h2>Últimas experiências</h2>
+    @for (experience of arrayExperiences(); track experience) {
+        <details>
+            <summary>
+                <p>
+                    <strong>{{experience.summary.title}}</strong>
+                    {{experience.summary.subtitle}}
+                </p>
+            </summary>
+            <article [innerHTML]="experience.text">
+            </article>
+        </details>
+    }
+</div>
