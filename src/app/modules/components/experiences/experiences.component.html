@@ -8,7 +8,13 @@
                     {{experience.summary.subtitle}}
                 </p>
             </summary>
-            <article [innerHTML]="experience.text">
+            <article>
+                <p>{{experience.article.text}}</p>
+                <ul>
+                    @for (point of experience.article.points; track point) {
+                        <li>{{point}}</li>
+                    }
+                </ul>
             </article>
         </details>
     }

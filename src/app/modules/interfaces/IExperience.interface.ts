@@ -3,5 +3,8 @@ export interface IExperience {
         title: string;
         subtitle: string;
     };
-    text: string;
+    article: {
+        text: string;
+        points: string[];
+    }
 }
