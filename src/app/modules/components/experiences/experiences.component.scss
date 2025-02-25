@@ -17,10 +17,10 @@
         margin-top: 10px;
         background: var(--black-010);
         border-radius: 7px;
-        color: var(--white-010);
 
         article {
             font-size: 14px;
+            background: var(--black-010);
             color: var(--white-010);
             ul {
                 list-style: disc;
@@ -29,6 +29,25 @@
             p {
                 font-size: 14px;
                 color: var(--white-010);
+            }
+        }
+
+        &[open] {
+            summary {
+                &::after {
+                    content: '▲';
+                    margin-top: 5px;
+                }
+                border-radius: 7px 7px 0 0;
+            }
+        }
+    
+        &:not([open]) {
+            summary {
+                &::after {
+                    content: '▼';
+                    margin-top: 5px;
+                }
             }
         }
     }
