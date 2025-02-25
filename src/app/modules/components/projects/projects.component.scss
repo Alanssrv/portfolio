@@ -1,0 +1,54 @@
+:host {
+    margin-top: 25px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    background: var(--black-010);
+
+    h2 {
+        text-align: center;
+        margin-top: 0 0 25px 0;
+        color: var(--primary);
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 25px;
+
+        li {
+            flex: 20%;
+            height: 100%;
+
+            button {
+                width: 100%;
+                height: 100%;
+                background: var(--black-010);
+                color: var(--white-010);
+                border: 2px solid var(--primary);
+                border-radius: 7px;
+                cursor: pointer;
+                transition: 500ms ease-out;
+
+                &:hover {
+                    background: var(--primary);
+                    color: var(--black-010);
+                }
+            }
+        }
+    }
+
+    @media (max-width: 750px) {
+        ul > li {
+            flex: 100%;
+        }
+    }
+
+}
