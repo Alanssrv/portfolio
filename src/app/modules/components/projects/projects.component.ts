@@ -33,13 +33,13 @@ export class ProjectsComponent {
       links: [{name:'Repositório GifApp', href:'https://github.com/Alanssrv/gif_app'}]
     },
     {
-      src: 'assets/img/projects/portifolio.png',
-      alt: 'Logo do portifólio web',
-      title: 'Portifólio',
+      src: 'assets/img/projects/portfolio.png',
+      alt: 'Logo do portfólio web',
+      title: 'Portfólio',
       height: '50px',
       width: '50px',
-      description: 'Projeto desse próprio portifólio, desenvolvido com Angular 2+ para aplicar conhecimentos em desenvolvimento web e mostrar um pouco do meu trabalho',
-      links: [{name:'Repositório Portifólio', href:'https://github.com/Alanssrv/portifolio'}]
+      description: 'Projeto desse próprio portfólio, desenvolvido com Angular 2+ para aplicar conhecimentos em desenvolvimento web e mostrar um pouco do meu trabalho',
+      links: [{name:'Repositório Portfólio', href:'https://github.com/Alanssrv/portfolio'}]
     }
   ]);
 
