@@ -1,15 +1,23 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from '../../components/header/header.component';
-import { KnowledgeComponent } from '../../components/knowledge/knowledge.component';
-import { ExperiencesComponent } from '../../components/experiences/experiences.component';
-import { ProjectsComponent } from '../../components/projects/projects.component';
 import { CommonModule } from '@angular/common';
+import { animate, query, style, transition, trigger } from '@angular/animations';
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, HeaderComponent, KnowledgeComponent, ExperiencesComponent, ProjectsComponent],
+  imports: [CommonModule],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrl: './home.component.scss',
+  animations: [
+    trigger('move-up', [
+      transition(':enter', [
+        style({
+          transform: 'translateY(20px)',
+          opacity: 0.3
+        }),
+        animate('700ms')
+      ])
+    ])
+  ]
 })
 export class HomeComponent {
 

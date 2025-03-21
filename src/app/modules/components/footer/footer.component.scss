@@ -1,0 +1,26 @@
+:host {
+    footer {
+        background: var(--primary);
+        display: flex;
+        justify-content: space-between;
+
+        div {
+            margin: 15px 0;
+
+            p {
+                margin: 0px;
+                font-size: 20px;
+            }
+        }
+        
+        a {
+            text-decoration: underline;
+        }
+
+        ul {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+    }
+}

@@ -1,63 +1,11 @@
-<header>
-    <img
-        src="assets/img/perfil.png"
-        alt="Foto perfil Alan Sousa"
-        width="130px"
-        height="130px"
-        loading="eager"
-    />
-    <h1>Alan Sousa</h1>
-</header>
-
-<aside>
-    <div class="container">
-        <p>.NET Fullstack | SQL Server | MongoDb | AWS | Angular</p>
-        <p>Beberibe, Ceará, Brasil</p>
-        <p>Estou a três anos na área do desenvolvimento de software, trabalhando principalmente com desenvolvimento, gestão de esteira e arquitetura de sistema, utilizando C# / .NET, ASP.NET, Razor, SQL Server e MongoDb</p>
-    </div>
+<header class="container">
+    <a routerLink="/"><h1>A. Sousa</h1></a>
     <nav>
         <ul>
-            <li>
-                <a href="https://api.whatsapp.com/send?phone=5585987790622&text=Ol%C3%A1%20Alan%2C%20tudo%20bem%3F" target="_blank">
-                    <img
-                        src="assets/icons/whatsapp.svg"
-                        alt="Ícone para contato do WhatsApp"
-                        width="22px"
-                        height="24px"
-                    >
-                </a>
-            </li>
-            <li>
-                <a href="mailto:alanssrv@gmail.com" target="_blank">
-                    <img
-                        src="assets/icons/mail.svg"
-                        alt="Ícone para contato do e-mail"
-                        width="22px"
-                        height="24px"
-                    >
-                </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/alan-sousa-6790ba1a3/" target="_blank">
-                    <img
-                        src="assets/icons/linkedin.svg"
-                        alt="Ícone para acesso ao perfil do LinkedIn"
-                        width="22px"
-                        height="24px"
-                    >
-                </a>
-            </li>
+            <li><a routerLink="about" routerLinkActive="activePage">SOBRE</a></li>
+            <li><a routerLink="experiences" routerLinkActive="activePage">EXPERIÊNCIAS</a></li>
+            <li><a routerLink="projects" routerLinkActive="activePage">PROJETOS</a></li>
+            <li>MAIS</li>
         </ul>
     </nav>
-    <section>
-        <a href="assets/pdf/cv.pdf" target="_blank" class="btn btn.primary">
-            <img
-                src="assets/icons/file.svg"
-                alt="Ícone de arquivo para baixar currículo"
-                width="22px"
-                height="24px"
-            >
-            Download CV
-        </a>
-    </section>
-</aside>
+</header>

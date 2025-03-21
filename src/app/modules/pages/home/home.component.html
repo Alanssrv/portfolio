@@ -1,16 +1,15 @@
-<app-header />
-<main>
-    <app-knowledge />
-    <app-experiences />
-    @defer(on viewport){
-        <app-projects />
-    } @placeholder {
-        <section>
-            <h2>Carregando todos os projetos desenvolvidos</h2>
-        </section>
-    } @error {
-        <section>
-            <h2>Ocooreu um erro ao resgatar os projetos, recarregue a página</h2>
-        </section>
-    }
-</main>
+<div class="container">
+    <div class="card" [@move-up]>
+        <img src="assets/img/perfil.png" alt="">
+        <h2>ALAN SOUSA DA SILVA</h2>
+        <h3>
+            DESENVOLVEDOR .NET<br/>
+            FULL STACK
+        </h3>
+    </div>
+
+    <div class="description" [@move-up]>
+        <h3>Olá,<br/> bem-vindo</h3>
+        <p>Esse site é meu portfólio, ele foi desenvolvido para fins didáticos e de autopromoção, navegue pelas abas e conheça mais um pouco de mim.</p>
+    </div>
+</div>
