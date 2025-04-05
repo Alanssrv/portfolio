@@ -1,0 +1,57 @@
+:host {
+
+    .container {
+        margin-bottom: 50px;
+    }
+
+    h2 {
+        margin: 20px 0;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .timeline-content ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        span {
+            font-size: 16px;
+            font-weight: bold;
+            color: var(--black-010);
+            display: block;
+            margin-bottom: -15px;
+            padding-left: 20px;
+            position: relative;
+
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 8px;
+                width: 12px;
+                height: 12px;
+                background-color: var(--primary);
+                border-radius: 50px;
+            }
+        }
+        
+        .timeline-title {
+            font-size: 22px;
+        }
+
+        .timeline-description {
+            width: 80%;
+            line-height: 30px;
+            border: 3px solid var(--primary);
+            border-width: 0 0 0 3px;
+            padding: 10px 0 0 15px;
+            margin-left: 5px;
+
+            p {
+                font-size: 16px;
+                margin: 3px;
+            }
+        }
+    }
+}
