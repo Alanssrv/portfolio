@@ -1,6 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { IExperience } from '../../interfaces/IExperience.interface';
 import { EducationState, IEducation } from '../../interfaces/IEducation.interface';
+import { IProject } from '../../interfaces/IProject.interface';
 
 @Component({
   selector: 'app-experiences',
@@ -36,7 +37,7 @@ export class ExperiencesComponent {
       company: "FitBank 450",
       companyUrl: "https://www.fitbank.com.br",
       companyCategory: "Fintech",
-      startDate: new Date(2022, 3, 11),
+      startDate: new Date(2022, 4, 11),
       endDate: null,
       positions: [
         {
@@ -75,6 +76,88 @@ export class ExperiencesComponent {
     }
   ]);
 
+  public arrayProjects = signal<IProject[]>([
+    {
+      "description": "Teste técnico desenvolvido como parte do processo seletivo da CTS Compass",
+      "personal": false,
+      "technologies": [
+        "Angular",
+        "Typescript",
+        "HTML",
+        "Sass",
+        "C#",
+        ".NET",
+        "ASP.NET",
+        "SQL Server",
+        "Entity Framework"
+      ],
+      "title": "Teste técnico - Compass",
+      "url": "https://github.com/Alanssrv/teste-cts-compass"
+    },
+    {
+      "description": "Projeto didático para desenvolvimento de um site de consumo e visualização de dados de uma API externa",
+      "personal": true,
+      "technologies": [
+        "Angular",
+        "Typescript",
+        "HTML",
+        "Sass"
+      ],
+      "title": "Naruto Frontend",
+      "url": "https://github.com/Alanssrv/naruto-front"
+    },
+    {
+      "description": "Aplicativo mobile para buscar e compartilhar gifs a partir da API do Giphy",
+      "personal": true,
+      "technologies": [
+        "Dart",
+        "Flutter"
+      ],
+      "title": "Giphy App",
+      "url": "https://github.com/Alanssrv/gif_app"
+    },
+    {
+      "description": "Projeto para desenvolvimento de portfólio pessoal",
+      "personal": true,
+      "technologies": [
+        "Angular",
+        "Typescript",
+        "HTML",
+        "Sass"
+      ],
+      "title": "Portólio",
+      "url": "https://github.com/Alanssrv/portfolio"
+    },
+    {
+      "description": "Teste técnico desenvolvido como parte do processo seletivo da Korp",
+      "personal": false,
+      "technologies": [
+        "Angular",
+        "Typescript",
+        "HTML",
+        "CSS",
+        "C#",
+        ".NET",
+        "ASP.NET",
+        "Entity Framework",
+        "SQL Server"
+      ],
+      "title": "Teste técnico - Korp",
+      "url": "https://github.com/Alanssrv/teste_korp"
+    },
+    {
+      "description": "Aplicativo Web de um jogo que usa reconhecimento de voz",
+      "personal": true,
+      "technologies": [
+        "HTML",
+        "CSS",
+        "Javascript"
+      ],
+      "title": "Jogo Número Secreto",
+      "url": "https://github.com/Alanssrv/JogoNumeroSecreto"
+    }
+  ]);
+
   formatDate(date: Date): string {
     const formatter = new Intl.DateTimeFormat('pt-BR', {
       month: 'short'
@@ -95,7 +178,7 @@ export class ExperiencesComponent {
     if (years > 0)
       textPeriod = `${years} ano${years > 1 ? 's' : ''}`;
 
-    if (months > 0) 
+    if (months > 0)
       textPeriod = textPeriod ? `${textPeriod} e ${months} ${months > 1 ? 'meses' : 'mês'}` : `${months} ${months > 1 ? 'meses' : 'mês'}`;
 
     return textPeriod;
