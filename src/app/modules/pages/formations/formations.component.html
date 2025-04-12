@@ -1,0 +1,50 @@
+<div class="container">
+    <h2>CURSOS</h2>
+    <div class="course-list">
+        @for (course of this.courses(); track $index) {
+        <div class="course-card">
+            <div class="course-card-header">
+                <img [src]="course.imageUrl || 'assets/img/course-default.png'" [alt]="course.title">
+                <h3>
+                    <a [href]="course.courseUrl" target="_blank">
+                        {{course.title}}
+                    </a>
+                </h3>
+                <p> {{course.description}} </p>
+            </div>
+            <div class="course-card-body">
+                <p>Plafaforma: {{course.institution}} </p>
+                @if (course.technologies.length > 0) {
+                <p>Ferramentas: {{course.technologies.join(', ')}}</p>
+                }
+                @if (course.completionDate !== null) {
+                <p>Data de conclusão: {{course.completionDate | date: 'dd/MM/yyyy'}} </p>
+                } @else {
+                <p>Data de conclusão: Em andamento </p>
+                }
+                @if (course.certificationUrl) {
+                <a [href]="course.certificationUrl" target="_blank">Ver certificado</a>
+                }
+            </div>
+        </div>
+        }
+    </div>
+
+    <h2>CERTIFICAÇÕES</h2>
+    <div class="certificate-list">
+        @for (certificate of this.certificates(); track $index) {
+        <div class="certificate">
+            <img [src]="certificate.imageUrl" [alt]="certificate.title" width="200px">
+            <h3>{{certificate.title}}</h3>
+            @if (certificate.completionDate) {
+            <p>Data de conclusão: {{certificate.completionDate | date: 'dd/MM/yyyy'}} </p>
+            } @else {
+            <p>Certificação em Andamento</p>
+            }
+            @if (certificate.certificationUrl) {
+            <a [href]="certificate.certificationUrl" target="_blank">Ver certificado</a>
+            }
+        </div>
+        }
+    </div>
+</div>
