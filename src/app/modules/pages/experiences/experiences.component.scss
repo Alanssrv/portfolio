@@ -85,17 +85,17 @@
 
             a {
                 color: black;
-                position: relative; /* Key for positioning */
+                position: relative;
 
                 &::after {
                     content: '';
                     position: absolute;
                     left: 0;
-                    bottom: 0px;
+                    bottom: -2px;
                     width: 0;
-                    height: 2px; /* Thickness of underline */
+                    height: 2px;
                     background: var(--primary);
-                    transition: width 0.3s ease-in-out; /* Adjust timing and easing */
+                    transition: width 0.3s ease-in-out;
                 }
                 
                 &:hover::after {
@@ -103,6 +103,5 @@
                 }
             }
         }
-
     }
 }

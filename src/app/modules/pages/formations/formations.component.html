@@ -4,7 +4,7 @@
         @for (course of this.courses(); track $index) {
         <div class="course-card">
             <div class="course-card-header">
-                <img [src]="course.imageUrl || 'assets/img/course-default.png'" [alt]="course.title">
+                <img [src]="course.imageUrl || 'assets/img/course-default.png'" [alt]="course.title" loading="lazy">
                 <h3>
                     <a [href]="course.courseUrl" target="_blank">
                         {{course.title}}
@@ -34,7 +34,7 @@
     <div class="certificate-list">
         @for (certificate of this.certificates(); track $index) {
         <div class="certificate">
-            <img [src]="certificate.imageUrl" [alt]="certificate.title" width="200px">
+            <img [src]="certificate.imageUrl" [alt]="certificate.title" width="200px" loading="lazy">
             <h3>{{certificate.title}}</h3>
             @if (certificate.completionDate) {
             <p>Data de conclusão: {{certificate.completionDate | date: 'dd/MM/yyyy'}} </p>
