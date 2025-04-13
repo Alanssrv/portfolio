@@ -1,0 +1,29 @@
+<div class="timeline-content">
+    <ul>
+        @for (experience of experiences; track experience) {
+        <li>
+            <span class="timeline-title">
+                <a [href]="experience.companyUrl" target="_blank">{{experience.company}}</a>
+            </span>
+            <div class="timeline-description">
+                <p>Ramo: {{experience.companyCategory}}</p>
+                <p>{{ formatDate(experience.startDate)}} {{experience.endDate == null ? " - EMPREGO ATUAL" : " - " + formatDate(experience.endDate)}}</p>
+                <div class="timeline-content">
+                    <ul>
+                        @for (position of experience.positions; track $index) {
+                        <li>
+                            <span>{{position.title}}</span>
+                            <div class="timeline-description">
+                                <p>{{position.description}}</p>
+                                <p>Período: {{formatPeriod(position.period, experience)}}</p>
+                                <p>Ferramentas: {{position.technologies.join(', ')}}</p>
+                            </div>
+                        </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </li>
+        }
+    </ul>
+</div>

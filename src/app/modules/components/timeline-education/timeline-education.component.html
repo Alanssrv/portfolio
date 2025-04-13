@@ -1,0 +1,26 @@
+<div class="timeline-content">
+    <ul>
+        @for (education of educations; track education) {
+        <li>
+            <span class="timeline-title">{{education.course}}</span>
+            <div class="timeline-description">
+                <p>Instituição: {{education.institution}}</p>
+                <p>Situação: {{education.state}}</p>
+                <p>{{this.formatDate(education.startDate)}} {{education.endDate == null ? "" : " - " + formatDate(education.endDate)}}</p>
+                <div class="timeline-content">
+                    <ul>
+                        @for (project of education.projects; track $index) {
+                        <li>
+                            <span>{{project.title}}</span>
+                            <div class="timeline-description">
+                                <p>{{project.description}}</p>
+                            </div>
+                        </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </li>
+        }
+    </ul>
+</div>

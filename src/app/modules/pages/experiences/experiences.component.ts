@@ -2,10 +2,13 @@ import { Component, signal } from '@angular/core';
 import { IExperience } from '../../interfaces/IExperience.interface';
 import { EducationState, IEducation } from '../../interfaces/IEducation.interface';
 import { IProject } from '../../interfaces/IProject.interface';
+import { TimelineExperiencesComponent } from '../../components/timeline-experiences/timeline-experiences.component';
+import { TimelineEducationComponent } from "../../components/timeline-education/timeline-education.component";
+import { ProjectsGridComponent } from "../../components/projects-grid/projects-grid.component";
 
 @Component({
   selector: 'app-experiences',
-  imports: [],
+  imports: [TimelineExperiencesComponent, TimelineEducationComponent, ProjectsGridComponent],
   templateUrl: './experiences.component.html',
   styleUrl: './experiences.component.scss'
 })
@@ -157,44 +160,4 @@ export class ExperiencesComponent {
       "url": "https://github.com/Alanssrv/JogoNumeroSecreto"
     }
   ]);
-
-  formatDate(date: Date): string {
-    const formatter = new Intl.DateTimeFormat('pt-BR', {
-      month: 'short'
-    });
-    const month = formatter.format(date).toUpperCase();
-    return `${month} ${date.getFullYear()}`;
-  }
-
-  formatPeriod(period: number | null, experience: IExperience): string {
-    if (period === null) {
-      const experienceMonths = experience.positions.reduce((sum, pos) => sum + (pos.period || 0), 0);
-      period = this.calculateMonthsBetween(experience.startDate) - experienceMonths;
-    }
-    const years = Math.floor(period / 12);
-    const months = period % 12;
-
-    let textPeriod = "";
-    if (years > 0)
-      textPeriod = `${years} ano${years > 1 ? 's' : ''}`;
-
-    if (months > 0)
-      textPeriod = textPeriod ? `${textPeriod} e ${months} ${months > 1 ? 'meses' : 'mês'}` : `${months} ${months > 1 ? 'meses' : 'mês'}`;
-
-    return textPeriod;
-  }
-
-  calculateMonthsBetween(pastDate: Date): number {
-    const currentDate = new Date();
-
-    const currentYear = currentDate.getFullYear();
-    const currentMonth = currentDate.getMonth();
-
-    const pastYear = pastDate.getFullYear();
-    const pastMonth = pastDate.getMonth();
-
-    const monthsDifference = (currentYear - pastYear) * 12 + (currentMonth - pastMonth);
-
-    return monthsDifference;
-  }
 }
