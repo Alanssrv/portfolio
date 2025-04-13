@@ -1,0 +1,16 @@
+<div class="certificate-list">
+    @for (certificate of certificates; track $index) {
+    <div class="certificate">
+        <img [src]="certificate.imageUrl" [alt]="certificate.title" width="200px" loading="lazy">
+        <h3>{{certificate.title}}</h3>
+        @if (certificate.completionDate) {
+        <p>Data de conclusão: {{certificate.completionDate | date: 'dd/MM/yyyy'}} </p>
+        } @else {
+        <p>Certificação em Andamento</p>
+        }
+        @if (certificate.certificationUrl) {
+        <a [href]="certificate.certificationUrl" target="_blank">Ver certificado</a>
+        }
+    </div>
+    }
+</div>

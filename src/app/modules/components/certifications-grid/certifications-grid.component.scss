@@ -1,0 +1,15 @@
+.certificate-list {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 80%;
+
+    h3 {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .certificate {
+        width: 20%;
+    }
+}

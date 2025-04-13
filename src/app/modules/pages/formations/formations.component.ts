@@ -1,10 +1,11 @@
 import { Component, OnInit, signal } from '@angular/core';
 import { IFormation } from '../../interfaces/IFormation.interface';
-import { DatePipe } from '@angular/common';
+import { CoursesGridComponent } from "../../components/courses-grid/courses-grid.component";
+import { CertificationsGridComponent } from "../../components/certifications-grid/certifications-grid.component";
 
 @Component({
   selector: 'app-formations',
-  imports: [DatePipe],
+  imports: [CoursesGridComponent, CertificationsGridComponent],
   templateUrl: './formations.component.html',
   styleUrl: './formations.component.scss'
 })
@@ -118,6 +119,4 @@ export class FormationsComponent implements OnInit {
       title: "Microsoft Certified: Azure Fundamentals"
     }
   ]);
-
-
 }
