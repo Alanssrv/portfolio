@@ -12,6 +12,10 @@
             display: flex;
             font-size: 20px;
             gap: 80px;
+
+            li {
+                text-transform: uppercase;
+            }
         }
 
         .activePage {

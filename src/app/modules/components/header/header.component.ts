@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { animate, state, style, transition, trigger } from '@angular/animations';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink, RouterLinkActive],
+  imports: [RouterLink,
+    RouterLinkActive,
+    TranslatePipe
+  ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
   animations: [
@@ -23,6 +27,9 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 })
 export class HeaderComponent {
 
+  constructor(private translate: TranslateService) {
+  }
+
   public isShowMoreMenu = false;
   public selectedLanguage = 1;
 
@@ -32,5 +39,6 @@ export class HeaderComponent {
 
   changeLanguage(idLanguage: number) {
     this.selectedLanguage = idLanguage;
+    this.translate.use(idLanguage === 1 ? 'pt-br' : 'en');
   }
 }
