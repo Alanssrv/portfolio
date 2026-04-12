@@ -4,8 +4,27 @@
         <ul>
             <li><a routerLink="about" routerLinkActive="activePage">SOBRE</a></li>
             <li><a routerLink="experiences" routerLinkActive="activePage">EXPERIÊNCIAS</a></li>
-            <li><a routerLink="formations" routerLinkActive="activePage">FORMAÇÕES</a></li>
-            <li>MAIS</li>
+            <!-- <li><a routerLink="formations" routerLinkActive="activePage">FORMAÇÕES</a></li> -->
+            <li class="moreOption" (click)="toggleMore()">
+                MAIS <span [@rotateIcon]="isShowMoreMenu ? 'open' : 'closed'">▼</span>
+            </li>
         </ul>
     </nav>
+    @if(isShowMoreMenu) {
+        <div class="moreMenu">
+            <div class="menuItem">
+                <h4>Idioma</h4>
+                <ul>
+                    <li (click)="changeLanguage(1)">
+                        <span [hidden]="selectedLanguage !== 1">▶&nbsp;</span>
+                        <img src="https://flagcdn.com/w20/br.png" alt="Brazil flag">
+                    </li>
+                    <li (click)="changeLanguage(2)">
+                        <span [hidden]="selectedLanguage !== 2">▶&nbsp;</span>
+                        <img src="https://flagcdn.com/w20/gb.png" alt="United Kingdom flag">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    }
 </header>
