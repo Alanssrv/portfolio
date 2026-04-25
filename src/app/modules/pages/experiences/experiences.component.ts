@@ -5,30 +5,31 @@ import { IProject } from '../../interfaces/IProject.interface';
 import { TimelineExperiencesComponent } from '../../components/timeline-experiences/timeline-experiences.component';
 import { TimelineEducationComponent } from "../../components/timeline-education/timeline-education.component";
 import { ProjectsGridComponent } from "../../components/projects-grid/projects-grid.component";
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-experiences',
-  imports: [TimelineExperiencesComponent, TimelineEducationComponent, ProjectsGridComponent],
+  imports: [TimelineExperiencesComponent, TimelineEducationComponent, ProjectsGridComponent, TranslatePipe],
   templateUrl: './experiences.component.html',
   styleUrl: './experiences.component.scss'
 })
 export class ExperiencesComponent {
   public arrayEducation = signal<IEducation[]>([
     {
-      institution: "Universidade Federal do Ceará (UFC)",
-      course: "Ciência da Computação",
+      institution: "education.institution.ufc",
+      course: "education.course.computer.science",
       startDate: new Date("2017-08-07"),
       endDate: new Date("2023-06-30"),
       state: EducationState.COMPLETED,
       projects: [
         {
-          title: "Bolsa: Experiência em R para estatística",
-          description: "Desenvolvimento de algoritmos para análise estatística utilizando R.",
+          title: "education.project1.title",
+          description: "education.project1.description",
           technologies: ["R"]
         },
         {
-          title: "Bolsa: Projeto VAR",
-          description: "Edição e publicação de vídeo-aulas de diversas disciplinas no YouTube.",
+          title: "education.project2.title",
+          description: "education.project2.description",
           technologies: ["OpenShot", "Audacity"]
         }
       ]
@@ -39,42 +40,59 @@ export class ExperiencesComponent {
     {
       company: "FitBank 450",
       companyUrl: "https://www.fitbank.com.br",
-      companyCategory: "Fintech",
+      companyCategory: "works.category.fintech",
       startDate: new Date(2022, 4, 11),
-      endDate: null,
+      endDate: new Date(2025, 3, 17),
       positions: [
         {
-          title: "Desenvolvedor .NET FullStack",
+          title: "work1.position1.title",
           period: 17,
-          description: "Desenvolvedor .NET FullStack na área de pagamentos, atuando no desenvolvimento e manutenção de APIs, microservices e telas.",
+          description: "work1.position1.description",
           technologies: [
             "C#/.NET", "SQL Server"
           ]
         },
         {
-          title: "Tech Lead Júnior",
+          title: "work1.position2.title",
           period: 9,
-          description: "Gerenciador de equipe, atuando na gestão de pessoas e processos, auxílio no desenvolvimento e manutenção de APIs, microservices e telas.",
+          description: "work1.position2.description",
           technologies: [
             "C#/.NET", "SQL Server", "MongoDB", "Azure", "IIS"
           ]
         },
         {
-          title: "Arquiteto de Sistemas Júnior",
+          title: "work1.position3.title",
           period: 9,
-          description: "Estudo e documentação de demandas junto ao time de produtos para fluxo de pagamentos com integração externa e manutenção de ambientes de homologação e produtivo",
+          description: "work1.position3.description",
           technologies: [
             "C#/.NET", "SQL Server", "MongoDB", "RabbitMQ", "Azure"
           ]
         },
         {
-          title: "Desenvolvedor .NET FullStack",
-          period: null,
-          description: "Desenvolvedor .NET FullStack na área de pagamentos, atuando no desenvolvimento e manutenção de APIs, microservices e telas, voltadas principalmente para integrações em fluxos de pagamentos.",
+          title: "work1.position4.title",
+          period: 2,
+          description: "work1.position4.description",
           technologies: [
             "C#/.NET", "SQL Server", "MongoDB", "RabbitMQ", "Azure"
           ]
         }
+      ]
+    },
+    {
+      company: "CTS Compass",
+      companyUrl: "https://www.ctscompass.com/",
+      companyCategory: "works.category.reliability.engineer",
+      startDate: new Date(2025, 4, 5),
+      endDate: null,
+      positions: [
+        {
+          title: "work2.position1.title",
+          period: null,
+          description: "work2.position1.description",
+          technologies: [
+            "C#/.NET", "Angular", "SQL Server", "AzureDevops"
+          ]
+        },
       ]
     }
   ]);

@@ -2,18 +2,18 @@
     <ul>
         @for (education of educations; track education) {
         <li>
-            <span class="timeline-title">{{education.course}}</span>
+            <span class="timeline-title">{{education.course | translate}}</span>
             <div class="timeline-description">
-                <p>Instituição: {{education.institution}}</p>
-                <p>Situação: {{education.state}}</p>
-                <p>{{this.formatDate(education.startDate)}} {{education.endDate == null ? "" : " - " + formatDate(education.endDate)}}</p>
+                <p>{{'education.label.institution' | translate}}: {{education.institution | translate}}</p>
+                <p>{{'education.label.state' | translate}}: {{'education.state.' + education.state | translate}}</p>
+                <p>{{education.startDate | customMonthYear:locale}} {{education.endDate == null ? "" : " - " + (education.endDate | customMonthYear:locale)}}</p>
                 <div class="timeline-content">
                     <ul>
                         @for (project of education.projects; track $index) {
                         <li>
-                            <span>{{project.title}}</span>
+                            <span>{{project.title | translate}}</span>
                             <div class="timeline-description">
-                                <p>{{project.description}}</p>
+                                <p>{{project.description | translate}}</p>
                             </div>
                         </li>
                         }

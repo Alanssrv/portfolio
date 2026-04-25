@@ -1,15 +1,30 @@
 import { Component, Input } from '@angular/core';
 import { IEducation } from '../../interfaces/IEducation.interface';
-import { formatDate } from '../../utils';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { CustomMonthYearPipe } from '../../pipes/custom-month-year.pipe';
 
 @Component({
   selector: 'app-timeline-education',
-  imports: [],
+  imports: [TranslatePipe, CustomMonthYearPipe],
   templateUrl: './timeline-education.component.html',
   styleUrl: './timeline-education.component.scss'
 })
 export class TimelineEducationComponent {
   @Input() educations!: IEducation[];
 
-  formatDate = formatDate;
+  public locale: string;
+
+  constructor(private translate: TranslateService) {
+    this.locale = this.translate.getCurrentLang();
+  }
+
+  ngOnInit() {
+    this.onLangChange();
+  }
+
+  onLangChange() {
+    this.translate.onLangChange.subscribe(() => {
+      this.locale = this.translate.getCurrentLang();
+    });
+  }
 }

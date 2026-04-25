@@ -1,17 +1,33 @@
 import { Component } from '@angular/core';
 import { Input } from '@angular/core';
 import { IExperience } from '../../interfaces/IExperience.interface';
-import { formatDate } from '../../utils';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { CustomMonthYearPipe } from "../../pipes/custom-month-year.pipe";
 
 @Component({
   selector: 'app-timeline-experiences',
-  imports: [],
+  imports: [TranslatePipe, CustomMonthYearPipe],
   templateUrl: './timeline-experiences.component.html',
   styleUrl: './timeline-experiences.component.scss'
 })
 export class TimelineExperiencesComponent {
   @Input() experiences!: IExperience[];
-  formatDate = formatDate;
+
+  public locale: string;
+
+  constructor(private translate: TranslateService) {
+    this.locale = this.translate.getCurrentLang();
+  }
+
+  ngOnInit() {
+    this.onLangChange();
+  }
+
+  onLangChange() {
+    this.translate.onLangChange.subscribe(() => {
+      this.locale = this.translate.getCurrentLang();
+    });
+  }
 
   formatPeriod(period: number | null, experience: IExperience): string {
     if (period === null) {
@@ -23,10 +39,10 @@ export class TimelineExperiencesComponent {
 
     let textPeriod = "";
     if (years > 0)
-      textPeriod = `${years} ano${years > 1 ? 's' : ''}`;
+      textPeriod = `${years} ${years > 1 ? this.translate.instant('common.years') : this.translate.instant('common.year')}`;
 
     if (months > 0)
-      textPeriod = textPeriod ? `${textPeriod} e ${months} ${months > 1 ? 'meses' : 'mês'}` : `${months} ${months > 1 ? 'meses' : 'mês'}`;
+      textPeriod = textPeriod ? `${textPeriod} ${this.translate.instant('common.and')} ${months} ${months > 1 ? this.translate.instant('common.months') : this.translate.instant('common.month')}` : `${months} ${months > 1 ? this.translate.instant('common.months') : this.translate.instant('common.month')}`;
 
     return textPeriod;
   }

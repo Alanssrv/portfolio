@@ -6,17 +6,17 @@
                 <a [href]="experience.companyUrl" target="_blank">{{experience.company}}</a>
             </span>
             <div class="timeline-description">
-                <p>Ramo: {{experience.companyCategory}}</p>
-                <p>{{ formatDate(experience.startDate)}} {{experience.endDate == null ? " - EMPREGO ATUAL" : " - " + formatDate(experience.endDate)}}</p>
+                <p>{{ 'works.label.area' | translate }}: {{experience.companyCategory | translate}}</p>
+                <p>{{ experience.startDate | customMonthYear:locale}} {{experience.endDate == null ? " - " + ('works.label.current.job' | translate) : " - " + (experience.endDate | customMonthYear:locale)}}</p>
                 <div class="timeline-content">
                     <ul>
                         @for (position of experience.positions; track $index) {
                         <li>
-                            <span>{{position.title}}</span>
+                            <span>{{position.title | translate}}</span>
                             <div class="timeline-description">
-                                <p>{{position.description}}</p>
-                                <p>Período: {{formatPeriod(position.period, experience)}}</p>
-                                <p>Ferramentas: {{position.technologies.join(', ')}}</p>
+                                <p>{{position.description | translate}}</p>
+                                <p>{{ 'works.label.period' | translate }}: {{formatPeriod(position.period, experience)}}</p>
+                                <p>{{ 'works.label.tools' | translate }}: {{position.technologies.join(', ')}}</p>
                             </div>
                         </li>
                         }

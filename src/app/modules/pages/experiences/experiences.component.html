@@ -1,10 +1,10 @@
 <div class="container">
-    <h2>ESCOLARIDADE</h2>
+    <h2>{{'experiences.schooling' | translate}}</h2>
     <app-timeline-education [educations]="this.arrayEducation()"/>
 
-    <h2>MERCADO DE TRABALHO</h2>
+    <h2>{{'experiences.work' | translate}}</h2>
     <app-timeline-experiences [experiences]="this.arrayExperiences()"/>
 
-    <h2>MEUS PROJETOS</h2>
+    <h2>{{'experiences.projects' | translate}}</h2>
     <app-projects-grid [projects]="this.arrayProjects()" />
 </div>

@@ -7,6 +7,53 @@
     "about.hobbies_item_2": "I like to play video games, here my <a href='https://steamcommunity.com/id/Alanssrv/'>Steam profile</a>, mainly pixel art games. From time to time, I like to buy a puzzle to test my patience, the most beautiful one I assembled was The Starry Night by Van Gogh, with 1000 pieces. Sometimes I invite children in the neighborhood (sisters and cousins) to play some card games (UNO, Old Maid, among others) and video games (PICO PARK, Overcooked, Monster Meals, among others).",
     "about.hobbies_item_3": "Regarding studies, I have been focusing a lot on learning English, I have been studying on the Fluency Academy platform, and this time I am managing to learn more consistently and I have been enjoying it a lot.",
 
+    "common.and": "and",
+    "common.year": "year",
+    "common.years": "years",
+    "common.month": "month",
+    "common.months": "months",
+
+    "experiences.schooling": "SCHOOLING",
+    "experiences.work": "WORK",
+    "experiences.projects": "PROJECTS",
+
+    "education.label.institution": "Institution",
+    "education.label.state": "State",
+
+    "education.state.in_progress": "In Progress",
+    "education.state.completed": "Completed",
+    "education.state.interrupted": "Interrupted",
+    "education.state.dropped_out": "Dropped Out",
+    "education.state.transferred": "Transferred",
+
+    "education.institution.ufc": "Federal University of Ceará (UFC)",
+    "education.course.computer.science": "Computer Science",
+
+    "education.project1.title": "Scholarship: Experience in R for Statistics",
+    "education.project1.description": "Development of algorithms for statistical analysis using R.",
+    "education.project2.title": "Scholarship: VAR Project",
+    "education.project2.description": "Editing and publishing video lessons of various subjects on YouTube.",
+
+    "works.label.area": "Area",
+    "works.label.current.job": "CURRENT JOB",
+    "works.label.period": "Period",
+    "works.label.tools": "Tools",
+
+    "works.category.fintech": "Fintech",
+    "works.category.reliability.engineer": "Reliability Engineer",
+
+    "work1.position1.title": ".NET FullStack Developer",
+    "work1.position1.description": ".NET FullStack Developer in the payments area, working on development and maintenance of APIs, microservices and screens.",
+    "work1.position2.title": "Junior Tech Lead",
+    "work1.position2.description": "Team manager, acting in people and process management, assisting in development and maintenance of APIs, microservices and screens.",
+    "work1.position3.title": "Junior Systems Architect",
+    "work1.position3.description": "Study and documentation of demands with the product team for payment flows with external integration and maintenance of staging and production environments.",
+    "work1.position4.title": ".NET FullStack Developer",
+    "work1.position4.description": ".NET FullStack Developer in the payments area, working on development and maintenance of APIs, microservices and screens, mainly focused on integrations in payment flows.",
+
+    "work2.position1.title": ".NET/Angular FullStack Developer",
+    "work2.position1.description": ".NET/Angular FullStack Developer in the reliability engineering area, working on development and maintenance of APIs, services and screens.",
+
     "header.about": "About",
     "header.experiences": "Experiences",
     "header.formations": "Formations",

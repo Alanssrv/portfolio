@@ -12,9 +12,9 @@ export interface IEducation {
 }
 
 export enum EducationState {
-    IN_PROGRESS = 'Em progresso',
-    COMPLETED = 'Concluído',
-    INTERRUPTED = 'Interrompido',
-    DROPPED_OUT = 'Desistente',
-    TRANSFERRED = 'Transferido'
+    IN_PROGRESS = 'in_progress',
+    COMPLETED = 'completed',
+    INTERRUPTED = 'interrupted',
+    DROPPED_OUT = 'dropped_out',
+    TRANSFERRED = 'transferred'
 }
