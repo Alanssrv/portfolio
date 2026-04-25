@@ -1,11 +1,24 @@
 {
+    "about.about_me": "ABOUT ME",
+    "about.hobbies": "HOBBIES",
+    "about.about_me_item_1": "My name is Alan Sousa da Silva, I'm {{ age }} years old and I'm from Beberibe, Ceará. I'm graduated in Computer Science from the Federal University Of Ceará (Universidade Federal do Ceará). I grew up in the countryside of Beberibe, in the Córrego do Pântano community, and I lived there until I was 15 years old, when I moved to the downtown of Beberibe to study at the vocational school. I've two younger sisters, Laís e Lara, my parents Franscisco e Elizangela, working as self-employed and a teacher, respectively.",
+
+    "about.hobbies_item_1": "Currently, I have been leading a healthier life, practicing bodybuilding and jiu-jitsu, besides trying to maintain a more balanced diet. I like to cook, usually simpler dishes, but for me, it's something relaxing, just like I enjoy cleaning the house, washing the dishes, and organizing things, I feel good doing this (living alone makes me like these things).",
+    "about.hobbies_item_2": "I like to play video games, here my <a href='https://steamcommunity.com/id/Alanssrv/'>Steam profile</a>, mainly pixel art games. From time to time, I like to buy a puzzle to test my patience, the most beautiful one I assembled was The Starry Night by Van Gogh, with 1000 pieces. Sometimes I invite children in the neighborhood (sisters and cousins) to play some card games (UNO, Old Maid, among others) and video games (PICO PARK, Overcooked, Monster Meals, among others).",
+    "about.hobbies_item_3": "Regarding studies, I have been focusing a lot on learning English, I have been studying on the Fluency Academy platform, and this time I am managing to learn more consistently and I have been enjoying it a lot.",
+
     "header.about": "About",
     "header.experiences": "Experiences",
     "header.formations": "Formations",
     "header.more": "More",
     "header.language": "Language",
+    "home.developer": "DEVELOPER",
+    "home.hello": "Hello,",
+    "home.welcome": "welcome",
+    "home.description": "This site is my portfolio, it was developed for didactic and self-promotion purposes, navigate through the tabs and get to know a little more about me.",
     "footer.see.project": "See this",
     "footer.project": "project",
     "footer.download": "Download my",
-    "footer.resume": "résumé"
+    "footer.resume": "résumé",
+    "notFound.message": "Page not found"
 }

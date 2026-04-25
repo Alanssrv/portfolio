@@ -1,19 +1,27 @@
 import { Component, OnInit, signal } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-about',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss'
 })
 export class AboutComponent implements OnInit {
 
-  public age = signal(0);
-  readonly birthDate = new Date(1999, 6, 22);
+  readonly age = signal(this.getAge(new Date(1999, 6, 22)));
 
-  ngOnInit(): void {
-    this.age.set(this.getAge(this.birthDate));
-  }
+  readonly aboutMeItems = [
+    { key: 'about.about_me_item_1', params: { age: this.age() } },
+  ];
+
+  readonly hobbiesItems = [
+    { key: 'about.hobbies_item_1', params: null },
+    { key: 'about.hobbies_item_2', params: null },
+    { key: 'about.hobbies_item_3', params: null }
+  ];
+
+  ngOnInit(): void {}
 
   public getAge(birthDate: Date): number {
     const today = new Date();
@@ -25,5 +33,4 @@ export class AboutComponent implements OnInit {
 
     return age;
   }
-
 }

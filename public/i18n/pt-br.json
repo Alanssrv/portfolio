@@ -1,12 +1,24 @@
 {
+    "about.about_me": "SOBRE MIM",
+    "about.hobbies": "HOBBIES",
+    "about.about_me_item_1": "Meu nome é Alan Sousa da Silva, tenho {{ age }} anos e sou natural de Beberibe no Ceará. Sou graduado em Ciência da Computação pela Universidade Federal do Ceará. Cresci no interior do Beberibe, na comunidade Córrego do Pântano, morei lá até meus 15 anos, quando me mudei para o centro de Beberibe para estudar na escola profissionalizante. Tenho duas irmãs mais novas, Laís e Lara, meus pais Franscisco e Elizangela, trabalham como autônomo e professora, respectivamente.",
+
+    "about.hobbies_item_1": "Atualmente tenho levado uma vida mais saudável, praticando musculação e jiu-jiutu, além de tentar manter uma alimentação mais equilibrada. Gosto de cozinhar, geralmente pratos mais simples, mas pra mim é algo relaxante, da mesma forma que gosto de limpar a casa, lavar a louça e organizar as coisas, me sinto bem fazendo isso (morar sozinho me faz gostar dessas coisas).",
+    "about.hobbies_item_2": "Gosto de jogar video game, aqui meu <a href='https://steamcommunity.com/id/Alanssrv/'>perfil na Steam</a>, principalmente jogos em pixel art. Vez ou outra gosto de comprar um quebra-cabeça para testar minha paciência, o mais bonito que montei foi A Noite Estrelada de Van Gogh, de 1000 peças. As vezes chamo crianças que tem na vizinhança (irmã e primos(as)) para jogar algum jogo de cartas (UNO, Jogo do Mico, entre outros) e video game (PICO PARK, Overcooked, Monster Meals, entre outros).",
+    "about.hobbies_item_3": "Em relação aos estudos, tenho focado bastante em aprender inglês, tenho estudado na plataforma da Fluency Academy, e dessa vez estou conseguindo aprender de forma mais consistente e tenho gostado bastante.",
+
     "header.about": "Sobre",
     "header.experiences": "Experiências",
     "header.formations": "Formações",
     "header.more": "Mais",
     "header.language": "Idioma",
+    "home.developer": "DESENVOLVEDOR",
+    "home.hello": "Olá,",
+    "home.welcome": "bem-vindo",
+    "home.description": "Esse site é meu portfólio, ele foi desenvolvido para fins didáticos e de autopromoção, navegue pelas abas e conheça mais um pouco de mim.",
     "footer.see.project": "Veja este",
     "footer.project": "projeto",
     "footer.download": "Baixe meu",
-    "footer.resume": "currículo"
-
+    "footer.resume": "currículo",
+    "notFound.message": "Página não encontrada"
 }

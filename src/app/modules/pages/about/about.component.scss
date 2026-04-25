@@ -7,4 +7,9 @@
             font-size: 18px;
         }
     }
+
+}
+
+::ng-deep p a {
+    text-decoration: underline !important;
 }
