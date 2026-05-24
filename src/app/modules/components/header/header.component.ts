@@ -38,6 +38,7 @@ export class HeaderComponent {
   }
 
   changeLanguage(idLanguage: number) {
+    this.isShowMoreMenu = false;
     this.selectedLanguage = idLanguage;
     this.translate.use(idLanguage === 1 ? 'pt-br' : 'en');
   }
