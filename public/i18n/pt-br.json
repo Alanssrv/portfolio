@@ -67,5 +67,23 @@
     "footer.project": "projeto",
     "footer.download": "Baixe meu",
     "footer.resume": "currículo",
-    "notFound.message": "Página não encontrada"
+    "notFound.message": "Página não encontrada",
+
+    "projects.label.see.project": "Ver projeto",
+    "projects.label.tools": "Ferramentas",
+    "projects.label.external.project": "Projeto externo",
+    "projects.label.personal.project": "Projeto pessoal",
+
+    "project1.description": "Teste técnico desenvolvido como parte do processo seletivo da CTS Compass",
+    "project1.title": "Teste técnico - Compass",
+    "project2.description": "Projeto didático para desenvolvimento de um site de consumo e visualização de dados de uma API externa",
+    "project2.title": "Naruto Frontend",
+    "project3.description": "Aplicativo mobile para buscar e compartilhar gifs a partir da API do Giphy",
+    "project3.title": "Giphy App",
+    "project4.description": "Projeto para desenvolvimento de portfólio pessoal",
+    "project4.title": "Portfólio",
+    "project5.description": "Teste técnico desenvolvido como parte do processo seletivo da Korp",
+    "project5.title": "Teste técnico - Korp",
+    "project6.description": "Aplicativo Web de um jogo que usa reconhecimento de voz",
+    "project6.title": "Jogo Número Secreto"
 }

@@ -99,7 +99,7 @@ export class ExperiencesComponent {
 
   public arrayProjects = signal<IProject[]>([
     {
-      "description": "Teste técnico desenvolvido como parte do processo seletivo da CTS Compass",
+      "description": "project1.description",
       "personal": false,
       "technologies": [
         "Angular",
@@ -112,11 +112,11 @@ export class ExperiencesComponent {
         "SQL Server",
         "Entity Framework"
       ],
-      "title": "Teste técnico - Compass",
+      "title": "project1.title",
       "url": "https://github.com/Alanssrv/teste-cts-compass"
     },
     {
-      "description": "Projeto didático para desenvolvimento de um site de consumo e visualização de dados de uma API externa",
+      "description": "project2.description",
       "personal": true,
       "technologies": [
         "Angular",
@@ -124,21 +124,21 @@ export class ExperiencesComponent {
         "HTML",
         "Sass"
       ],
-      "title": "Naruto Frontend",
+      "title": "project2.title",
       "url": "https://github.com/Alanssrv/naruto-front"
     },
     {
-      "description": "Aplicativo mobile para buscar e compartilhar gifs a partir da API do Giphy",
+      "description": "project3.description",
       "personal": true,
       "technologies": [
         "Dart",
         "Flutter"
       ],
-      "title": "Giphy App",
+      "title": "project3.title",
       "url": "https://github.com/Alanssrv/gif_app"
     },
     {
-      "description": "Projeto para desenvolvimento de portfólio pessoal",
+      "description": "project4.description",
       "personal": true,
       "technologies": [
         "Angular",
@@ -146,11 +146,11 @@ export class ExperiencesComponent {
         "HTML",
         "Sass"
       ],
-      "title": "Portólio",
+      "title": "project4.title",
       "url": "https://github.com/Alanssrv/portfolio"
     },
     {
-      "description": "Teste técnico desenvolvido como parte do processo seletivo da Korp",
+      "description": "project5.description",
       "personal": false,
       "technologies": [
         "Angular",
@@ -163,18 +163,18 @@ export class ExperiencesComponent {
         "Entity Framework",
         "SQL Server"
       ],
-      "title": "Teste técnico - Korp",
+      "title": "project5.title",
       "url": "https://github.com/Alanssrv/teste_korp"
     },
     {
-      "description": "Aplicativo Web de um jogo que usa reconhecimento de voz",
+      "description": "project6.description",
       "personal": true,
       "technologies": [
         "HTML",
         "CSS",
         "Javascript"
       ],
-      "title": "Jogo Número Secreto",
+      "title": "project6.title",
       "url": "https://github.com/Alanssrv/JogoNumeroSecreto"
     }
   ]);
