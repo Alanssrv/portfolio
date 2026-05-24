@@ -1,0 +1,89 @@
+{
+    "about.about_me": "SOBRE MIM",
+    "about.hobbies": "HOBBIES",
+    "about.about_me_item_1": "Meu nome é Alan Sousa da Silva, tenho {{ age }} anos e sou natural de Beberibe no Ceará. Sou graduado em Ciência da Computação pela Universidade Federal do Ceará. Cresci no interior do Beberibe, na comunidade Córrego do Pântano, morei lá até meus 15 anos, quando me mudei para o centro de Beberibe para estudar na escola profissionalizante. Tenho duas irmãs mais novas, Laís e Lara, meus pais Franscisco e Elizangela, trabalham como autônomo e professora, respectivamente.",
+
+    "about.hobbies_item_1": "Atualmente tenho levado uma vida mais saudável, praticando musculação e jiu-jiutu, além de tentar manter uma alimentação mais equilibrada. Gosto de cozinhar, geralmente pratos mais simples, mas pra mim é algo relaxante, da mesma forma que gosto de limpar a casa, lavar a louça e organizar as coisas, me sinto bem fazendo isso (morar sozinho me faz gostar dessas coisas).",
+    "about.hobbies_item_2": "Gosto de jogar video game, aqui meu <a href='https://steamcommunity.com/id/Alanssrv/'>perfil na Steam</a>, principalmente jogos em pixel art. Vez ou outra gosto de comprar um quebra-cabeça para testar minha paciência, o mais bonito que montei foi A Noite Estrelada de Van Gogh, de 1000 peças. As vezes chamo crianças que tem na vizinhança (irmã e primos(as)) para jogar algum jogo de cartas (UNO, Jogo do Mico, entre outros) e video game (PICO PARK, Overcooked, Monster Meals, entre outros).",
+    "about.hobbies_item_3": "Em relação aos estudos, tenho focado bastante em aprender inglês, tenho estudado na plataforma da Fluency Academy, e dessa vez estou conseguindo aprender de forma mais consistente e tenho gostado bastante.",
+
+    "common.and": "e",
+    "common.year": "ano",
+    "common.years": "anos",
+    "common.month": "mês",
+    "common.months": "meses",
+    
+    "experiences.schooling": "ESCOLARIDADE",
+    "experiences.work": "MERCADO DE TRABALHO",
+    "experiences.projects": "MEUS PROJETOS",
+
+    "education.label.institution": "Instituição",
+    "education.label.state": "Situação",
+    
+    "education.state.in_progress": "Em progresso",
+    "education.state.completed": "Concluído",
+    "education.state.interrupted": "Interrompido",
+    "education.state.dropped_out": "Desistente",
+    "education.state.transferred": "Transferido",
+    
+    "education.institution.ufc": "Universidade Federal do Ceará (UFC)",
+    "education.course.computer.science": "Ciência da Computação",
+    
+    "education.project1.title": "Bolsa: Experiência em R para estatística",
+    "education.project1.description": "Desenvolvimento de algoritmos para análise estatística utilizando R.",
+    "education.project2.title": "Bolsa: Projeto VAR",
+    "education.project2.description": "Edição e publicação de vídeo-aulas de diversas disciplinas no YouTube.",
+
+    "works.label.area": "Ramo",
+    "works.label.current.job": "EMPREGO ATUAL",
+    "works.label.period": "Período",
+    "works.label.tools": "Ferramentas",
+
+    "works.category.fintech": "Fintech",
+    "works.category.reliability.engineer": "Engenharia de Confiabilidade",
+
+    "work1.position1.title": "Desenvolvedor .NET FullStack",
+    "work1.position1.description": "Desenvolvedor .NET FullStack na área de pagamentos, atuando no desenvolvimento e manutenção de APIs, microservices e telas.",
+    "work1.position2.title": "Tech Lead Júnior",
+    "work1.position2.description": "Gerenciador de equipe, atuando na gestão de pessoas e processos, auxílio no desenvolvimento e manutenção de APIs, microservices e telas.",
+    "work1.position3.title": "Arquiteto de Sistemas Júnior",
+    "work1.position3.description": "Estudo e documentação de demandas junto ao time de produtos para fluxo de pagamentos com integração externa e manutenção de ambientes de homologação e produtivo",
+    "work1.position4.title": "Desenvolvedor .NET FullStack",
+    "work1.position4.description": "Desenvolvedor .NET FullStack na área de pagamentos, atuando no desenvolvimento e manutenção de APIs, microservices e telas, voltadas principalmente para integrações em fluxos de pagamentos.",
+
+    "work2.position1.title": "Desenvolvedor .NET/Angular FullStack",
+    "work2.position1.description": "Desenvolvedor .NET/Angular FullStack na área de engenharia de confiabilidade, atuando no desenvolvimento e manutenção de APIs, serviços e telas.",
+
+    "header.about": "Sobre",
+    "header.experiences": "Experiências",
+    "header.formations": "Formações",
+    "header.more": "Mais",
+    "header.language": "Idioma",
+    "home.developer": "DESENVOLVEDOR",
+    "home.hello": "Olá,",
+    "home.welcome": "bem-vindo",
+    "home.description": "Esse site é meu portfólio, ele foi desenvolvido para fins didáticos e de autopromoção, navegue pelas abas e conheça mais um pouco de mim.",
+    "footer.see.project": "Veja este",
+    "footer.project": "projeto",
+    "footer.download": "Baixe meu",
+    "footer.resume": "currículo",
+    "notFound.message": "Página não encontrada",
+
+    "projects.label.see.project": "Ver projeto",
+    "projects.label.tools": "Ferramentas",
+    "projects.label.external.project": "Projeto externo",
+    "projects.label.personal.project": "Projeto pessoal",
+
+    "project1.description": "Teste técnico desenvolvido como parte do processo seletivo da CTS Compass",
+    "project1.title": "Teste técnico - Compass",
+    "project2.description": "Projeto didático para desenvolvimento de um site de consumo e visualização de dados de uma API externa",
+    "project2.title": "Naruto Frontend",
+    "project3.description": "Aplicativo mobile para buscar e compartilhar gifs a partir da API do Giphy",
+    "project3.title": "Giphy App",
+    "project4.description": "Projeto para desenvolvimento de portfólio pessoal",
+    "project4.title": "Portfólio",
+    "project5.description": "Teste técnico desenvolvido como parte do processo seletivo da Korp",
+    "project5.title": "Teste técnico - Korp",
+    "project6.description": "Aplicativo Web de um jogo que usa reconhecimento de voz",
+    "project6.title": "Jogo Número Secreto"
+}

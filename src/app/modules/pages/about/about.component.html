@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="text-box">
+        <h3>{{'about.about_me' | translate}}</h3>
+        @for (item of this.aboutMeItems; track $index) {
+            <p [innerHTML]="item.key | translate: item.params"></p>
+        }
+    </div>
+    <div class="text-box">
+        <h3>{{'about.hobbies' | translate}}</h3>
+        @for (item of this.hobbiesItems; track $index) {
+            <p [innerHTML]="item.key | translate: item.params"></p>
+        }
+    </div>
+</div>

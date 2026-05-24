@@ -1,0 +1,29 @@
+<footer class="container">
+    <div>
+        <p>
+            {{ 'footer.see.project' | translate }} 
+            <a href="https://github.com/Alanssrv/portfolio" target="_blank">
+                {{ 'footer.project' | translate }}
+            </a>
+        </p>
+        <p>{{ 'footer.download' | translate }} 
+            <a href="https://drive.google.com/drive/folders/1Y1UZdr9Y4i1atdblyeLTIkhdBm94Jocx?usp=sharing" target="_blank">
+                {{ 'footer.resume' | translate }}
+            </a>
+        </p>
+    </div>
+    <ul>
+        @for (icon of this.icons(); track $index) {
+            <li>
+                <a [href]="icon.url" target="_blank">
+                    <img
+                    [src]="icon.imgSrc"
+                    [alt]="icon.name"
+                    width="30px"
+                    height="30px"
+                    >
+                </a>
+            </li>
+        }
+    </ul>
+</footer>

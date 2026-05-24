@@ -1,0 +1,29 @@
+<div class="timeline-content">
+    <ul>
+        @for (experience of experiences; track experience) {
+        <li>
+            <span class="timeline-title">
+                <a [href]="experience.companyUrl" target="_blank">{{experience.company}}</a>
+            </span>
+            <div class="timeline-description">
+                <p>{{ 'works.label.area' | translate }}: {{experience.companyCategory | translate}}</p>
+                <p>{{ experience.startDate | customMonthYear:locale}} {{experience.endDate == null ? " - " + ('works.label.current.job' | translate) : " - " + (experience.endDate | customMonthYear:locale)}}</p>
+                <div class="timeline-content">
+                    <ul>
+                        @for (position of experience.positions; track $index) {
+                        <li>
+                            <span>{{position.title | translate}}</span>
+                            <div class="timeline-description">
+                                <p>{{position.description | translate}}</p>
+                                <p>{{ 'works.label.period' | translate }}: {{formatPeriod(position.period, experience)}}</p>
+                                <p>{{ 'works.label.tools' | translate }}: {{position.technologies.join(', ')}}</p>
+                            </div>
+                        </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </li>
+        }
+    </ul>
+</div>

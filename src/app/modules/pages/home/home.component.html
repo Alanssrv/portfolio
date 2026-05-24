@@ -1,16 +1,16 @@
-<app-header />
-<main>
-    <app-knowledge />
-    <app-experiences />
-    @defer(on viewport){
-        <app-projects />
-    } @placeholder {
-        <section>
-            <h2>Carregando todos os projetos desenvolvidos</h2>
-        </section>
-    } @error {
-        <section>
-            <h2>Ocooreu um erro ao resgatar os projetos, recarregue a página</h2>
-        </section>
-    }
-</main>
+<div class="container">
+    <div class="card" [@move-up]>
+        <img src="assets/img/perfil.png" alt="">
+        <h2>ALAN SOUSA DA SILVA</h2>
+        <h3 class="uppercase">
+            {{'home.developer' | translate}}<br/>
+            .NET/ANGULAR<br/>
+            FULL STACK
+        </h3>
+    </div>
+
+    <div class="description" [@move-up]>
+        <h3>{{'home.hello' | translate}}<br/>{{'home.welcome' | translate}}</h3>
+        <p>{{'home.description' | translate}}</p>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="projects-grid">
+    @for (project of projects; track $index) {
+        <div class="project-card">
+            <div class="project-card-header">
+                <h3>{{project.title | translate}}</h3>
+                <p>{{project.description | translate}}</p>
+            </div>
+            <div class="project-card-body">
+                <p>{{project.personal ? ('projects.label.personal.project' | translate) : ('projects.label.external.project' | translate)}}</p>
+                <p>{{'projects.label.tools' | translate}}: {{project.technologies.join(', ')}}</p>
+                <a [href]="project.url" target="_blank">{{'projects.label.see.project' | translate}}</a>
+            </div>
+        </div>
+    }
+</div>

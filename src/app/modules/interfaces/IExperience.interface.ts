@@ -1,10 +1,13 @@
 export interface IExperience {
-    summary: {
+    company: string;
+    companyUrl: string;
+    companyCategory: string;
+    startDate: Date,
+    endDate: Date | null,
+    positions: {
         title: string;
-        subtitle: string;
-    };
-    article: {
-        text: string;
-        points: string[];
-    }
+        period: number | null; // in months
+        description: string;
+        technologies: string[];
+    }[];
 }
