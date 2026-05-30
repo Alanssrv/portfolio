@@ -3,4 +3,16 @@
     --white-010: #ededed;
     --black-005: #585b5e;
     --black-010: #2a2c2d;
+    
+    --background-001: #ededed;
+    --background-002: #302d2d;
+    --text-001: #2a2c2d;
+    --text-002: #f5f5f5;
+}
+
+.dark-theme {
+    --background-001: #302d2d;
+    --background-002: #ededed;
+    --text-001: #f5f5f5;
+    --text-002: #2a2c2d;
 }

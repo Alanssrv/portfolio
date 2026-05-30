@@ -5,6 +5,7 @@
         align-items: center;
 
         h1 {
+            color: var(--text-001);
             font-size: 36px;
         }
 
@@ -13,7 +14,8 @@
             font-size: 20px;
             gap: 80px;
 
-            li {
+            li > a, span {
+                color: var(--text-001);
                 text-transform: uppercase;
             }
         }
@@ -24,6 +26,14 @@
 
         .moreOption {
             cursor: pointer;
+            position: relative;
+
+            .moreLabel {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+            }
+
             > span {
                 display: inline-block;
             }
@@ -32,13 +42,15 @@
         .moreMenu {
             display: block;
             position: absolute;
-            top: 60px;
-            right: 55px;
+            top: calc(100% + 16px);
+            left: 0;
             z-index: 2;
 
             .menuItem {
                 h4 {
+                    margin-top: 10px;
                     margin-bottom: 0;
+                    color: var(--text-001);
                 }
                 
                 ul {
@@ -48,8 +60,13 @@
                     gap: 10px;
 
                     li {
+                        text-transform: none;
                         display: flex;
                         align-items: center;
+
+                        i {
+                            color: var(--text-001);
+                        }
                     }
                 }
             }

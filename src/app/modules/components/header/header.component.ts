@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
@@ -25,21 +25,48 @@ import { TranslatePipe, TranslateService } from '@ngx-translate/core';
     ])
   ]
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
 
-  constructor(private translate: TranslateService) {
-  }
+  constructor(
+    private translate: TranslateService,
+    private renderer: Renderer2
+  ) { }
 
   public isShowMoreMenu = false;
   public selectedLanguage = 1;
+  public selectedTheme = 1;
+  public isDarkMode = false;
+
+  ngOnInit() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      this.isDarkMode = true;
+      this.renderer.addClass(document.body, 'dark-theme');
+    }
+  }
 
   toggleMore() {
     this.isShowMoreMenu = !this.isShowMoreMenu;
   }
 
   changeLanguage(idLanguage: number) {
-    this.isShowMoreMenu = false;
+    // this.isShowMoreMenu = false;
     this.selectedLanguage = idLanguage;
     this.translate.use(idLanguage === 1 ? 'pt-br' : 'en');
+  }
+
+  changeTheme(idTheme: number) {
+    // this.isShowMoreMenu = false;
+    this.selectedTheme = idTheme;
+    const newTheme = idTheme === 1 ? 'light' : 'dark';
+    this.isDarkMode = newTheme === 'dark';
+
+    if (this.isDarkMode) {
+      this.renderer.addClass(document.body, 'dark-theme');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      this.renderer.removeClass(document.body, 'dark-theme');
+      localStorage.setItem('theme', 'light');
+    }
   }
 }
