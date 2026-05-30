@@ -63,6 +63,11 @@
     "home.hello": "Hello,",
     "home.welcome": "welcome",
     "home.description": "This site is my portfolio, it was developed for didactic and self-promotion purposes, navigate through the tabs and get to know a little more about me.",
+
+    "header.theme": "Theme",
+    "header.light": "Light",
+    "header.dark": "Dark",
+
     "footer.see.project": "See this",
     "footer.project": "project",
     "footer.download": "Download my",

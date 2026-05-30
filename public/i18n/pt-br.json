@@ -63,6 +63,11 @@
     "home.hello": "Olá,",
     "home.welcome": "bem-vindo",
     "home.description": "Esse site é meu portfólio, ele foi desenvolvido para fins didáticos e de autopromoção, navegue pelas abas e conheça mais um pouco de mim.",
+
+    "header.theme": "Tema",
+    "header.light": "Claro",
+    "header.dark": "Escuro",
+
     "footer.see.project": "Veja este",
     "footer.project": "projeto",
     "footer.download": "Baixe meu",
