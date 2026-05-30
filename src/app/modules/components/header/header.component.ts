@@ -40,8 +40,15 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
+      this.selectedTheme = 2;
       this.isDarkMode = true;
       this.renderer.addClass(document.body, 'dark-theme');
+    }
+
+    const savedLanguage = localStorage.getItem('language');
+    if (savedLanguage) {
+      this.selectedLanguage = parseInt(savedLanguage, 10);
+      this.translate.use(this.selectedLanguage === 1 ? 'pt-br' : 'en');
     }
   }
 
@@ -50,13 +57,14 @@ export class HeaderComponent implements OnInit {
   }
 
   changeLanguage(idLanguage: number) {
-    // this.isShowMoreMenu = false;
+    this.isShowMoreMenu = false;
     this.selectedLanguage = idLanguage;
     this.translate.use(idLanguage === 1 ? 'pt-br' : 'en');
+    localStorage.setItem('language', idLanguage.toString());
   }
 
   changeTheme(idTheme: number) {
-    // this.isShowMoreMenu = false;
+    this.isShowMoreMenu = false;
     this.selectedTheme = idTheme;
     const newTheme = idTheme === 1 ? 'light' : 'dark';
     this.isDarkMode = newTheme === 'dark';
