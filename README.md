@@ -1,6 +1,22 @@
 # Portfolio
 
+This project was developed as a personal portfolio to showcase my skills and projects. It is built using Angular and incorporates various features to enhance user experience.
+
+Access the live version, published in Vercel: [alansousa.dev.br](https://alansousa.dev.br)
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.8.
+
+## Features
+- Dark mode; General theme and color palette
+- Internationalization (i18n); Support in Portuguese and English
+- Angular Router
+- Angular Material
+- Angular Animations
+
+## Upcoming Features
+- Responsive design for mobile and tablet devices
+- Contact form with email functionality
+- Integration with Firebase or other backend services for project data management
 
 ## Development server
 
@@ -11,48 +27,6 @@ ng serve
 ```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
 ## Additional Resources
 
