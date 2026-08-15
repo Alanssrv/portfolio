@@ -11,7 +11,7 @@
         // background-position-x: 80vw;
 
         .card {
-            width: 15%;
+            width: 25%;
             background: var(--primary);
             margin: 20px;
             padding: 40px;
@@ -21,6 +21,7 @@
 
             img {
                 width: 100%;
+                border-radius: 20px;
             }
 
             h2, h3 {
@@ -50,6 +51,49 @@
             p {
                 color: var(--text-001);
                 font-size: 24px;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            margin: 20px 0;
+            flex-direction: column;
+            gap: 20px;
+
+            .card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 90%;
+                padding: 20px;
+
+                span {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 20px;
+                }
+
+                img {
+                    width: 30%;
+                }
+
+                h3 {
+                    width: 100%;
+                }
+            }
+
+            .description {
+                width: 100%;
+
+                h3 {
+                    font-size: 40px;
+                }
+
+                p {
+                    font-size: 18px;
+                }
             }
         }
     }

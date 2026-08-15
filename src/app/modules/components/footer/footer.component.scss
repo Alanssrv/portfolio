@@ -25,4 +25,22 @@
             align-items: center;
         }
     }
+
+    @media (max-width: 768px) {
+        footer {
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            ul {
+                display: grid;
+                padding: 20px 0;
+                grid-template-rows: repeat(2, auto);
+                grid-auto-flow: column;
+                row-gap: 8px;
+            }
+        }
+    }
 }
