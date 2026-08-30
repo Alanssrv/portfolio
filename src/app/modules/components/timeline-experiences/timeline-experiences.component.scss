@@ -2,4 +2,10 @@
     span, p, a {
         color: var(--text-001);
     }
+
+    @media (max-width: 768px) {
+        .timeline-description {
+            width: 90%;
+        }
+    }
 }
